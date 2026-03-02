@@ -11,3 +11,14 @@ kubectl get all --all-namespaces
 kubectl get ns
  
 ```
+# Contoh membuat, modifikasi, atau menghapus resource
+
+```bash
+# Apply configurasi
+kubectl apply -f nama-file.yml
+
+# Menghapus rescource
+kubectl delete -f nama-file.yml atau
+kubectl delete (resource) (nama)
+
+```
