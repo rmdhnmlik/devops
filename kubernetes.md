@@ -93,6 +93,14 @@ Kubernetes adalah orchestrator
 fungsinya mengatul banyak hal
 - menjadwalkan workload ke banyak mesin
 - menjaga jumlah replika
-- mengator networking
+- mengatur networking
 - menjaga sistem sesuai desired stated
 
+
+![container-docker-compire-pod-k8s](asset/pod2.png)
+Pod adalah abstraksi yang lebih luas dari container. dimana container di bungkus dalam sebuah pod
+
+Analogi Sederhana (logistik)
+- Container = Barang
+- Pod = Paket
+- Kubernetes = Sistem Logistik
