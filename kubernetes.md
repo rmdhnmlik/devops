@@ -11,7 +11,7 @@ kubectl get all --all-namespaces
 kubectl get ns
  
 ```
-# Contoh membuat, modifikasi, atau menghapus resource
+# Bassic command membuat, modifikasi, atau menghapus resource
 
 ```bash
 # Apply configurasi
