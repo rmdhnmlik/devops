@@ -97,7 +97,7 @@ fungsinya mengatul banyak hal
 - menjaga sistem sesuai desired stated
 
 
-![container-docker-compire-pod-k8s](asset/pod2.png)
+![pod](asset/pod2.png)
 
 Pod adalah abstraksi yang lebih luas dari container. dimana container di bungkus dalam sebuah pod
 
@@ -105,3 +105,16 @@ Analogi Sederhana (logistik)
 - Container = Barang
 - Pod = Paket
 - Kubernetes = Sistem Logistik
+
+Di dalam sebuah Pod memungkinkan kita untuk menjalankan lebih dari satu container.
+
+![pod-structure](asset/pod3.png)
+
+Satu pod banyak container
+Terdapat kondisi dimana aplikasi tidak berjalan sendirian :
+- satu container menjalankan Aplikasi backend
+- satu container menjalankan Log Expoter
+- Keduanya berkomunikasi via Localhost
+
+Istilah Sidecar sering digunakan untuk menggambarkan ada 2 container yang berjalan di satu pod.
+Container utama fokus menjalankan aplikasi bisnis (API). container lainnya bertugas sebagai komponen pendukung.
