@@ -73,3 +73,9 @@ kubectl config use-context (nama)
 kubectl get pod -n kube-system
 
 ```
+
+# Pod
+Pod adalah unit terkecil yang bisa dijalakan di kubernetes. aplikasi yang kita jalankan akan berada di dalam sebuah pod.
+berikut ilustrasi perbandingan antara pod dengan container pada docker
+
+
