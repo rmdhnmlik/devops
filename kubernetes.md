@@ -80,3 +80,19 @@ berikut ilustrasi perbandingan antara pod dengan container pada docker :
 
 ![container-docker-compire-pod-k8s](asset/pod.png)
 
+Pod tidak sama dengan container, karena di dalam satu pod memungkinkan ada lebih dari satu container.
+
+Mindset 
+Kubernetes tidak menjalankan container secara langsung.
+kubernetes bekerja di level yang lebih tinggi dibanding docker.
+
+Docker adalah container runtime
+Fungsinya untuk, membuat menjalankan dan menghentikan container
+
+Kubernetes adalah orchestrator
+fungsinya mengatul banyak hal
+- menjadwalkan workload ke banyak mesin
+- menjaga jumlah replika
+- mengator networking
+- menjaga sistem sesuai desired stated
+
