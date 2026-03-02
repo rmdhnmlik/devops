@@ -11,7 +11,7 @@ kubectl get all --all-namespaces
 kubectl get ns
  
 ```
-# Basic command membuat, modifikasi, atau menghapus resource
+# Basic command membuat, modifikasi, atau menghapus service
 
 ```bash
 # Apply configurasi
@@ -22,7 +22,7 @@ kubectl delete -f nama-file.yml atau
 kubectl delete (resource) (nama)
 
 ```
-# Contoh gambaran sederhana membuat resource 
+# Contoh gambaran sederhana running service 
 buat file dengan nama pod.yml kemudian isi filenya dengan konfigurasi berikut :
 ```bash
 apiVersion: v1
@@ -50,6 +50,9 @@ nginx-demo   1/1     Running   0          6m54s
 # cek logs pada pod yang sudah kita deploy
 kubectl logs -f nginx-demo
 
+# masuk kedalam pod service
+kubectl exec -it nginx-demo -- bash
+
 # untuk menghapus pod yang sudah kita buat 
 kubectl delete -f pod.yml atau
 kubectl delete pod nginx-demo
@@ -57,5 +60,16 @@ kubectl delete pod nginx-demo
 #maka akan muncl seperti berikut 
 pod "nginx-demo" deleted
 
+```
+# Basic command mengelola context dan namespace 
+```bash
+# melihat context
+kubectl config get-contexts
+
+# mengubah context
+kubectl config use-context (nama)
+
+# menggunakan namespace tertentu
+kubectl get pod -n kube-system
 
 ```
